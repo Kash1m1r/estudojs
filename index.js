@@ -67,9 +67,22 @@ cliente.endereco = {
   );
   
   console.log(listaApenasApartamentos);
+
+for (let chave in cliente) {
+  console.log(cliente[chave]);
+}
+
+const chavesDoObjeto = Object.keys(cliente);
+console.log(chavesDoObjeto);
+
+if (!chavesDoObjeto.includes("endereco")) {
+  console.error("Erro, necessário ter um endereço");
+}
+
 /*
 git remote add origin
 git add .
 git status
 git commit -m
+git push -u origin master
 */
