@@ -29,8 +29,9 @@ function calculaMedia(notasSala) {
 const cliente = {
     nome: ["Gabriel", "Pereira"],
     idade: 24,
-    cpf: "057.623.783-30",
-    email: "gabrielgomes@ma.def.br"
+    cpf: "027.643.223-00",
+    email: "gabrielgasdomes@ma.def.br",
+    telefone: ["0120310230", "0101202102"]
 };
 
 console.log(cliente.nome);
@@ -79,6 +80,21 @@ if (!chavesDoObjeto.includes("endereco")) {
   console.error("Erro, necessário ter um endereço");
 }
 
+function ligaCliente(telefonePessoal, telefoneProfissional) {
+  console.log(`Ligando para ${telefonePessoal}`);
+  console.log(`Ligando para ${telefoneProfissional}`);
+}
+
+ligaCliente(cliente.telefone[0], cliente.telefone[1]);
+
+//spread operator
+const encomenda = {
+  ...cliente.enderecos[0]
+}
+
+console.log(encomenda);
+
+//JavaScript Object Notation
 /*
 git remote add origin
 git add .
