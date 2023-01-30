@@ -1,19 +1,18 @@
-const livros = require("./livros");
+const livrosLista = require("./livros");
 
-function listaLivros(lista) {
-    for(atual = 0; atual < lista.length; atual++){
-        let analisar = atual;
-        while(analisar > 0 && lista[analisar].preco > lista[analisar + 1].preco){
-            let itemAnalisar = lista[analisar]; 
-            let itemFrente = lista[analisar + 1]    ;
+function insertion(lista){
+    for(atual = 0; atual < lista.length; atual++) {
+        let analise = atual;
+        while(analise > 0 && lista[analise].preco < lista[analise -1].preco) {
+            let listaAnalise = lista[analise];
+            let listaAnterior = lista[analise - 1];
 
-            lista[analisar] = itemFrente;
-            lista[analisar + 1] = itemAnalisar;
+            lista[analise] = listaAnterior;
+            lista[analise - 1] = listaAnalise;
 
-            analisar++;
+            analise --;
         }
     }
     console.log(lista);
 }
-
-listaLivros(livros);
+insertion(livrosLista);
