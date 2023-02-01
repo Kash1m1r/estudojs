@@ -22,7 +22,7 @@ function ordena(parte1, parte2) {
 
         if(produtoLista1.preco < produtoLista2.preco) {
             resultado.push(produtoLista1);
-            produtoLista1++;
+            posicaoAtual1++;
         }else{
             resultado.push(produtoLista2);
             posicaoAtual2++
