@@ -39,7 +39,7 @@ function dividePivo(array) {
     return array;
 }
 
-
+module.exports = trocaLugar;
 console.log(dividePivo(listaPrincipal));
 //console.log(encontraMenores(listaPrincipal[6], listaPrincipal));
 
