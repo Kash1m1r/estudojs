@@ -1,4 +1,4 @@
-const listaSeries = require("./listaseries");
+const listaPrincipal = require("./listaseries");
 
 function encontraMenores(pivo, array) {
     let menores = 0;
@@ -11,9 +11,18 @@ function encontraMenores(pivo, array) {
     }
 
     return menores;
-
 }
+/*
+function trocaLugar(array, de, para) {
+    const elem1 = array[de];
+    const elem2 = array[para];
 
-console.log(listaSeries);
+    array[para] = elem1;
+    array[de] = elem2;
+}
+*/
 
-console.log(encontraMenores(listaSeries[2], listaSeries));
+
+console.log(listaPrincipal);
+console.log(encontraMenores(listaPrincipal[1], listaPrincipal));
+

@@ -61,4 +61,4 @@ const listaSeries = [
   }
 ]
 
-module.exports = {listaSeries};
+module.exports = listaSeries;
