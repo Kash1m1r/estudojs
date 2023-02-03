@@ -5,7 +5,7 @@ const listaSeries = [
   },
   {
     titulo: "The Sopranos",
-    preco: 17
+    preco: 18
   },
   {
     titulo: "Game of Thrones",
@@ -13,11 +13,11 @@ const listaSeries = [
   },
   {
     titulo: "The Wire",
-    preco: 15
+    preco: 11
   },
   {
     titulo: "The Office",
-    preco: 10
+    preco: 24
   },
   {
     titulo: "Friends",
@@ -29,35 +29,35 @@ const listaSeries = [
   },
   {
     titulo: "Stranger Things",
-    preco: 17
+    preco: 30
   },
   {
     titulo: "The Crown",
-    preco: 19
+    preco: 44
   },
   {
     titulo: "The Walking Dead",
-    preco: 19
+    preco: 76
   },
   {
     titulo: "The Marvelous Mrs. Maisel",
-    preco: 15
+    preco: 64
   },
   {
     titulo: "Westworld",
-    preco: 19
+    preco: 27
   },
   {
     titulo: "Peaky Blinders",
-    preco: 17
+    preco: 43
   },
   {
     titulo: "Mindhunter",
-    preco: 17
+    preco: 2
   },
   {
     titulo: "Ozark",
-    preco: 17
+    preco: 9
   }
 ]
 

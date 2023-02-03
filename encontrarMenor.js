@@ -10,9 +10,10 @@ function encontraMenores(pivo, array) {
         }
     }
 
-    return menores;
+    trocaLugar(array, array.indexOf(pivo), menores);
+    return array
 }
-/*
+
 function trocaLugar(array, de, para) {
     const elem1 = array[de];
     const elem2 = array[para];
@@ -20,9 +21,25 @@ function trocaLugar(array, de, para) {
     array[para] = elem1;
     array[de] = elem2;
 }
-*/
+
+function dividePivo(array) {
+    let pivo = array[Math.floor(array.length /2)];
+    console.log(pivo);
+    encontraMenores(pivo, array);
+
+    let valoresMenores = 0;
+    for(let analisando = 0; analisando < array.length; analisando++) {
+        let atual = array[analisando];
+        if(atual.preco < pivo.preco && atual !== pivo) {
+            trocaLugar(array, analisando, valoresMenores);
+            valoresMenores++;
+        }
+    }
+
+    return array;
+}
 
 
-console.log(listaPrincipal);
-console.log(encontraMenores(listaPrincipal[1], listaPrincipal));
+console.log(dividePivo(listaPrincipal));
+//console.log(encontraMenores(listaPrincipal[6], listaPrincipal));
 
